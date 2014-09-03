@@ -63,6 +63,8 @@ struct lnode* applnode(char ch, int freq, struct lnode *root)
 	struct lnode *node = mklnode(ch, freq);
 
 	root->next = node;
+
+	return node;
 }
 
 struct lnode* inslnode(char ch, int freq, struct lnode *parent)
